@@ -29,14 +29,17 @@
 #include <stdlib.h>
 #include <sys/sysinfo.h>
 
-#include "vendor_init.h"
+#include <android-base/logging.h>
 #include "property_service.h"
 #include "log.h"
 
 char const *heapgrowthlimit;
 char const *heapminfree;
 
-using android::init::property_set;
+namespace android {
+namespace init {
+
+
 
 static void init_alarm_boot_properties()
 {
@@ -98,3 +101,6 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapminfree", heapminfree);
     property_set("dalvik.vm.heapmaxfree", "8m");
 }
+}  // namespace init
+} // namespace android
+

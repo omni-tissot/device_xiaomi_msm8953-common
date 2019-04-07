@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, vendor/omni/config/phone-xxhdpi-3072-dalvik-heap.mk)
 $(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
 
 # Overlays
@@ -73,8 +75,14 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Device-specific Settings
+#PRODUCT_PACKAGES += \
+#    XiaomiParts
+
+# OMNI Charger Images
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    omni_charger_res_images \
+    animation.txt \
+    font_charger.png
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -264,7 +272,8 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service-qti
+    android.hardware.power@1.0-impl \
+    power.msm8953
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml

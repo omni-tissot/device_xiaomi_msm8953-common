@@ -74,8 +74,8 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Device-specific Settings
-#PRODUCT_PACKAGES += \
-#    XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts
 
 # OMNI Charger Images
 PRODUCT_PACKAGES += \

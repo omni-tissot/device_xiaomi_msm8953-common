@@ -336,8 +336,8 @@ PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
 # ThermalController app
-PRODUCT_PACKAGES += \
-    ThermalController
+#PRODUCT_PACKAGES += \
+ #   ThermalController
 
 # Thermal
 PRODUCT_COPY_FILES += \

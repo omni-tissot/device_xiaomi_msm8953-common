@@ -41,8 +41,9 @@ import org.lineageos.settings.utils.SeekBarPreference;
 import org.lineageos.settings.kcal.R;
 
 public class DisplayCalibration extends PreferenceActivity implements
-        OnPreferenceChangeListener {
 
+    Preference.OnPreferenceChangeListener {
+    private static final String TAG = "DisplayCalibration";
     public static final String KEY_KCAL_ENABLED = "kcal_enabled";
     public static final String KEY_KCAL_RED = "kcal_red";
     public static final String KEY_KCAL_GREEN = "kcal_green";

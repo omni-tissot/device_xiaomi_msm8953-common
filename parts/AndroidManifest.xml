@@ -54,6 +54,15 @@
                        android:resource="@string/dirac_summary" />
         </activity>
 
+        <!-- Display Calibration -->
+        <activity
+            android:name="org.lineageos.settings.kcal.DisplayCalibration"
+            android:label="@string/kcal_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+		
         <service android:name=".doze.DozeService"
                  android:permission="XiaomiDozeService">
         </service>

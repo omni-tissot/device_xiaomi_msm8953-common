@@ -38,7 +38,7 @@ import java.util.Arrays;
 
 import android.app.ActionBar;
 import org.lineageos.settings.utils.SeekBarPreference;
-import org.lineageos.settings.R;
+import org.lineageos.settings.kcal.R;
 
 public class DisplayCalibration extends PreferenceActivity implements
         OnPreferenceChangeListener {

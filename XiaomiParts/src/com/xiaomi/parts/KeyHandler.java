@@ -28,10 +28,10 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.os.UserHandle;
 
-import com.android.internal.os.AlternativeDeviceKeyHandler;
+import com.android.internal.util.omni.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
 
-public class KeyHandler implements AlternativeDeviceKeyHandler {
+public class KeyHandler implements DeviceKeyHandler {
 
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final boolean DEBUG = true;
@@ -59,7 +59,7 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
 
         void observe() {
             mContext.getContentResolver().registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.OMNI_DEVICE_FEATURE_SETTINGS),
+                    Settings.System.OMNI_HARDWARE_KEYS_DISABLE),
                     false, this);
             update();
         }
@@ -111,7 +111,7 @@ public class KeyHandler implements AlternativeDeviceKeyHandler {
     public static void setButtonSetting(Context context) {
         if (DEBUG) Log.i(TAG, "SetButtonDisable called" );
         mButtonDisabled = Settings.System.getIntForUser(
-                context.getContentResolver(), Settings.System.OMNI_DEVICE_FEATURE_SETTINGS, 0,
+                context.getContentResolver(), Settings.System.OMNI_HARDWARE_KEYS_DISABLE, 0,
                 UserHandle.USER_CURRENT) == 1;
         if (DEBUG) Log.i(TAG, "setButtonDisable=" + mButtonDisabled);
     }

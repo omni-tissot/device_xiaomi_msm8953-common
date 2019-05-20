@@ -82,14 +82,14 @@ public class DeviceSettings extends PreferenceFragment {
 
         SwitchPreference mKeysDisablesSwitch = (SwitchPreference) findPreference(KEY_HARDWARE_KEYS_DISABLE);
         mKeysDisablesSwitch.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
-                    Settings.System.OMNI_DEVICE_FEATURE_SETTINGS, 0) != 0);
+                    Settings.System.OMNI_HARDWARE_KEYS_DISABLE, 0) != 0);
 
         mKeysDisablesSwitch.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
              @Override
              public boolean onPreferenceClick(Preference preference) {
                  if (preference == mKeysDisablesSwitch) {
                      Settings.System.putInt(getActivity().getContentResolver(),
-                             Settings.System.OMNI_DEVICE_FEATURE_SETTINGS, mKeysDisablesSwitch.isChecked() ? 1 : 0);
+                             Settings.System.OMNI_HARDWARE_KEYS_DISABLE, mKeysDisablesSwitch.isChecked() ? 1 : 0);
                      return true;
                  }
                  return false;

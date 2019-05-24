@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.content.Context;
 import android.content.Intent;

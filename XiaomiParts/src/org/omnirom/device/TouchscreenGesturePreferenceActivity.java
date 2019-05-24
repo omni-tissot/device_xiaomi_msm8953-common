@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2018 Omnirom
+ * Copyright (c) 2016 The CyanogenMod Project
+ *           (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,17 +15,19 @@
  * limitations under the License.
  */
 
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 
-public class ButtonSettingsActivity extends PreferenceActivity {
+import com.android.settingslib.drawer.SettingsDrawerActivity;
 
+public class TouchscreenGesturePreferenceActivity extends SettingsDrawerActivity {
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new DeviceSettings()).commit();
+        getFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, new TouchscreenGesturePreferenceFragment())
+                .commit();
     }
 }

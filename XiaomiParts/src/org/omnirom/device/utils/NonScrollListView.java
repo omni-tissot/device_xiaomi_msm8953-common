@@ -1,4 +1,4 @@
-package com.xiaomi.parts.utils;
+package org.omnirom.device;
 
 import android.content.Context;
 import android.util.AttributeSet;

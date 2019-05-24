@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.content.Context;
 import android.hardware.Sensor;

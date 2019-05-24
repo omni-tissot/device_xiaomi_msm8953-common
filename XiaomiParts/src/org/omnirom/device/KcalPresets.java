@@ -1,4 +1,4 @@
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 public class KcalPresets {
 

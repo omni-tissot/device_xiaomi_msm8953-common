@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.content.ContentResolver;
 import android.content.Context;

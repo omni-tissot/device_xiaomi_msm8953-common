@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -33,8 +33,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 
 import android.app.ActionBar;
-import com.xiaomi.parts.utils.SeekBarPreference;
-import com.xiaomi.parts.R;
+import org.omnirom.device.utils.SeekBarPreference;
+import org.omnirom.device.R;
 
 public class DisplayCalibration extends PreferenceActivity implements
         OnPreferenceChangeListener {

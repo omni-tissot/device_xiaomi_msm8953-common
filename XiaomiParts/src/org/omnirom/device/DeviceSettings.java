@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -41,7 +41,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.util.Log;
 
-import com.xiaomi.parts.utils.FileUtils;
+import org.omnirom.device.utils.FileUtils;
 
 public class DeviceSettings extends PreferenceFragment {
 

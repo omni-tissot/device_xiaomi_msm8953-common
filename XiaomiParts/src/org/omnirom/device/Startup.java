@@ -15,7 +15,7 @@
 * along with this program. If not, see <http://www.gnu.org/licenses/>.
 *
 */
-package com.xiaomi.parts;
+package org.omnirom.device;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -30,9 +30,9 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
 
-import com.xiaomi.parts.SensorsDozeService;
-import com.xiaomi.parts.utils.FileUtils;
-import com.xiaomi.parts.Utils;
+import org.omnirom.device.SensorsDozeService;
+import org.omnirom.device.utils.FileUtils;
+import org.omnirom.device.Utils;
 
 import java.io.File;
 

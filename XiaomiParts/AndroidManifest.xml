@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiaomi.parts"
+    package="org.omnirom.device"
     android:sharedUserId="android.uid.system" >
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme"
         android:supportsRtl="true" >
         <activity
-            android:name="com.xiaomi.parts.DeviceSettingsActivity"
+            android:name="org.omnirom.device.DeviceSettingsActivity"
             android:exported="false"
             android:label="@string/advanced_settings" >
             <intent-filter>
@@ -36,7 +36,7 @@
             </intent-filter>
         </activity>
         <activity-alias
-            android:name="com.xiaomi.parts.DeviceSettings"
+            android:name="org.omnirom.device.DeviceSettings"
             android:exported="true"
             android:enabled="true"
             android:label="@string/advanced_settings"
@@ -52,7 +52,7 @@
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_mi" />
         </activity-alias>
-        <service android:name="com.xiaomi.parts.SensorsDozeService"
+        <service android:name="org.omnirom.device.SensorsDozeService"
                  android:permission="SensorsDozeService">
         </service>
 		
@@ -68,7 +68,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.xiaomi.parts.DisplayCalibration"
+            android:name="org.omnirom.device.DisplayCalibration"
             android:exported="true"
             android:label="@string/kcal_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings">
@@ -77,7 +77,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
         </activity>
-        <receiver android:name="com.xiaomi.parts.Startup" >
+        <receiver android:name="org.omnirom.device.Startup" >
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>

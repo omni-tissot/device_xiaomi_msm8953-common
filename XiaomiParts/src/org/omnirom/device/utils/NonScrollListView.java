@@ -1,4 +1,4 @@
-package org.omnirom.device;
+package org.omnirom.device.utils;
 
 import android.content.Context;
 import android.util.AttributeSet;

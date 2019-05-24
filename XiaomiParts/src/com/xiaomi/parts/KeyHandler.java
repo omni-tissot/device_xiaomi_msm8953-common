@@ -36,12 +36,12 @@ public class KeyHandler implements DeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
     private static final boolean DEBUG = true;
 
-    private static final int KEY_HOME_VIRTUAL = 172;
+    private static final int KEY_HOME = 172;
     private static final int KEY_BACK = 158;
     private static final int KEY_RECENTS = 139;
 
     private static final int[] sDisabledKeys = new int[]{
-        KEY_HOME_VIRTUAL = 11,
+        KEY_HOME,
         KEY_BACK,
         KEY_RECENTS
     };

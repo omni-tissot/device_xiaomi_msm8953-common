@@ -15,7 +15,7 @@
 -->
 <resources>
     <string name="app_name">XiaomiParts</string>
-    <string name="advanced_settings">Xiaomi Parts</string>
+    <string name="advanced_settings">Device Features</string>
     <string name="advanced_settings_summary">Advanced</string> 
     <string name="category_system">System</string>
     <string name="vib_strength_title_head">Vibration strength</string>
@@ -27,7 +27,7 @@
     <string name="hardware_keys_disable_summary">Force disable hardware keys</string>
 
     <!-- Kcal -->
-    <string name="kcal_title">Display color</string>
+    <string name="kcal_title">Display Calibration</string>
     <string name="kcal_summary">Display color calibration using KCAL</string>
     <string name="kcal_enabled_title">Enable KCAL</string>
     <string name="kcal_enabled_summary">Turn on display calibration using KCAL</string>

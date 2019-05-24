@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package org.omnirom.devcie;
+package org.omnirom.device.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -35,8 +35,8 @@ import android.widget.TextView;
 import android.os.Handler;
 import android.os.Message;
 
-import com.xiaomi.parts.R;
-import org.omnirom.devcieKCAL;
+import org.omnirom.device.R;
+import org.omnirom.device.UtilsKCAL;
 
 public class SeekBarPreference extends Preference {
 

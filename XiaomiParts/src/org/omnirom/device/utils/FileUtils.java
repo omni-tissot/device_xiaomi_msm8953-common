@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.xiaomi.parts.utils;
+package org.omnirom.device;
 
 import android.util.Log;
 

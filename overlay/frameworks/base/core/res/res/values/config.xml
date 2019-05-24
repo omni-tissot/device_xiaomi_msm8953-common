@@ -422,7 +422,7 @@
     <bool name="config_displayBlanksAfterDoze">false</bool>
 
     <string name="config_deviceKeyHandlerLib" translatable="false">/system/priv-app/XiaomiParts/XiaomiParts.apk</string>
-    <string name="config_deviceKeyHandlerClass" translatable="false">com.xiaomi.parts.KeyHandler</string>
+    <string name="config_deviceKeyHandlerClass" translatable="false">org.omnirom.device.KeyHandler</string>
 	
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.

@@ -1,6 +1,6 @@
--keep public class com.xiaomi.parts.KeyHandler
+-keep public class org.omnirom.device.KeyHandler
 
--keepclassmembers public class com.xiaomi.parts.KeyHandler {
+-keepclassmembers public class org.omnirom.device.KeyHandler {
     public <init>(android.content.Context, android.util.AttributeSet);
     *;
 }

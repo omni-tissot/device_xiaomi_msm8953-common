@@ -16,10 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="265dp"
             android:src="@drawable/calibration_png" />
-        <com.xiaomi.parts.utils.NonScrollListView
+        <org.omnirom.device.utils.NonScrollListView
             android:id="@android:id/list"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        </com.xiaomi.parts.utils.NonScrollListView>
+        </org.omnirom.device.utils.NonScrollListView>
     </LinearLayout>
 </ScrollView>

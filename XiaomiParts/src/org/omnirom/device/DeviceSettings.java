@@ -50,7 +50,6 @@ public class DeviceSettings extends PreferenceFragment {
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
     private TwoStatePreference mTapToWakeSwitch;
-    private VibratorStrengthPreference mVibratorStrength;
     private SwitchPreference mKeysDisablesSwitch;
 
     private Preference mKcalPref;
@@ -95,11 +94,6 @@ public class DeviceSettings extends PreferenceFragment {
                  return false;
              }
         });
-		
-        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
-        if (mVibratorStrength != null) {
-            mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
-        }
     }
 
     @Override

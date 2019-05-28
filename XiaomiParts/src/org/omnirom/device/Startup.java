@@ -58,7 +58,6 @@ public class Startup extends BroadcastReceiver {
     public void onReceive(final Context context, final Intent bootintent) {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 	    context.startService(new Intent(context, SensorsDozeService.class));
-        VibratorStrengthPreference.restore(context);
         DisplayCalibration.restore(context);
     }
 	

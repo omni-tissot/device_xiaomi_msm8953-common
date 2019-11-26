@@ -73,7 +73,7 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bootloader
@@ -104,6 +104,7 @@ BOARD_USES_QCNE := true
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
@@ -116,6 +117,7 @@ endif
 WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
 # Display
+BOARD_USES_ADRENO := true
 MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
@@ -154,7 +156,7 @@ DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(VENDOR_PATH)/compatibility_matrix.xml
 
 # HWUI
-HWUI_COMPILE_FOR_PERF := true
+#HWUI_COMPILE_FOR_PERF := true
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8953
@@ -181,6 +183,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 #TARGET_USES_INTERACTION_BOOST := true
+TARGET_POWERHAL_VARIANT := qcom
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
@@ -202,6 +205,7 @@ endif
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
+include vendor/omni/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
 # Wi-Fi
